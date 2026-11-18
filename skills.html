@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="navdiv">
+
+            <div class="logo">
+                <a href="index.html">Portfolio</a>
+            </div>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Education.html">Education</a></li>
+                <li><a href="Project.html">Project</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+
+    <section class="skills-section">
+
+        <h2 class="heading">My <span>Skills</span></h2>
+
+          <div class="skills-container">
+
+        <!-- Frontend Development -->
+        <div class="skill-box"onclick="showSkill('frontend')">
+            <h3>Frontend Development</h3>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+        </div>
+
+        <!-- Backend Development -->
+        <div class="skill-box"onclick="showSkill('backend')">
+            <h3>Backend Development</h3>
+            <p>Node.js</p>
+            <p>Express.js</p>
+            <p>EJS</p>
+            <p>REST API</p>
+           
+        </div>
+
+        <!-- Programming Languages -->
+        <div class="skill-box"onclick="showSkill('programming')">
+            <h3>Programming Languages</h3>
+            <p>C++</p>
+            <p>JavaScript</p>
+            <p>Python</p>
+        </div>
+
+        <!-- Database -->
+        <div class="skill-box"onclick="showSkill('database')">
+            <h3>Database</h3>
+            <p>SQL</p>
+            <p>MongoDB</p>
+            <p>Mongoose</p>
+        </div>
+
+   </div>
+        <div id="skill-details" class="skill-details">
+    Click on any skill card to see details.
+</div>
+
+
+    </section>
+
+<script src="./script.js"></script>
+
+</body>
+</html>
